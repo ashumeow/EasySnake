@@ -190,7 +190,13 @@ function main() {
 
 
     frames = 0;
-    keystate = {};
+    keystate = {
+        up: [19, 37, 43],
+        down: [20, 37, 41],
+        left: [17, 32, 37],
+        right: [19, 34, 36],
+        start_game: [6, 16]
+    };
     // keeps track of the keybourd input
     document.addEventListener("keydown", function (evt) {
         keystate[evt.keyCode] = true;
